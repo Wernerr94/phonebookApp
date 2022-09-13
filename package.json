@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wernerr94.github.io/phonebookAppgit /",
+  "homepage": "https://wernerr94.github.io/phonebookApp/",
   "dependencies": {
     "@mui/icons-material": "^5.10.3",
     "@reduxjs/toolkit": "^1.8.5",
