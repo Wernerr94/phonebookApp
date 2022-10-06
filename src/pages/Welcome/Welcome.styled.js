@@ -56,15 +56,29 @@ export const WelcomeHero = styled.div`
 `;
 export const AboutContainer = styled.div`
   max-width: 95%;
-  height: ${pxToRem(70)}rem;
+  height: ${props => (props.show ? `${pxToRem(300)}rem` : `${pxToRem(70)}rem`)};
   border-radius: ${pxToRem(20)}rem;
   background-color: #fff;
   margin: auto;
   margin-top: ${pxToRem(20)}rem;
+  position: relative;
   & h3 {
     line-height: ${pxToRem(70)}rem;
     font-family: 'Syncopate', sans-serif;
     font-weight: 900;
+    font-size: ${pxToRem(20)}rem;
+    padding-left: ${pxToRem(20)}rem;
+  }
+  & img {
+    position: absolute;
+    top: ${props => (props.show ? '5%' : '35%')};
+    right: 2%;
+    width: 20px;
+    height: 20px;
+  }
+  & p {
+    margin-top: 0;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: ${pxToRem(20)}rem;
     padding-left: ${pxToRem(20)}rem;
   }
